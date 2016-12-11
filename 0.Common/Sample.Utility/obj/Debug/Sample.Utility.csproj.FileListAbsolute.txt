@@ -1,0 +1,8 @@
+D:\Temps\Sample-MVC-Angular-Webapi-Mongo\0.Common\DatingSite.Utility\bin\Debug\Sample.Utility.dll
+D:\Temps\Sample-MVC-Angular-Webapi-Mongo\0.Common\DatingSite.Utility\bin\Debug\Sample.Utility.pdb
+D:\Temps\Sample-MVC-Angular-Webapi-Mongo\0.Common\DatingSite.Utility\obj\Debug\Sample.Utility.dll
+D:\Temps\Sample-MVC-Angular-Webapi-Mongo\0.Common\DatingSite.Utility\obj\Debug\Sample.Utility.pdb
+D:\Temps\Sample-MVC-Angular-Webapi-Mongo\0.Common\Sample.Utility\bin\Debug\Sample.Utility.dll
+D:\Temps\Sample-MVC-Angular-Webapi-Mongo\0.Common\Sample.Utility\bin\Debug\Sample.Utility.pdb
+D:\Temps\Sample-MVC-Angular-Webapi-Mongo\0.Common\Sample.Utility\obj\Debug\Sample.Utility.dll
+D:\Temps\Sample-MVC-Angular-Webapi-Mongo\0.Common\Sample.Utility\obj\Debug\Sample.Utility.pdb

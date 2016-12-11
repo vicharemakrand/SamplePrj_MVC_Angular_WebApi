@@ -1,0 +1,9 @@
+D:\Temps\Sample-MVC-Angular-Webapi-Mongo\5.InfraStructure\DatingSIte.Infrastructure\obj\Debug\Sample.InfraStructure.csprojResolveAssemblyReference.cache
+D:\Temps\Sample-MVC-Angular-Webapi-Mongo\5.InfraStructure\DatingSIte.Infrastructure\obj\Debug\Sample.InfraStructure.dll
+D:\Temps\Sample-MVC-Angular-Webapi-Mongo\5.InfraStructure\DatingSIte.Infrastructure\obj\Debug\Sample.InfraStructure.pdb
+D:\Temps\Sample-MVC-Angular-Webapi-Mongo\5.InfraStructure\ASPNETIdentityWithOnion.Web\bin\NLog.config
+D:\Temps\Sample-MVC-Angular-Webapi-Mongo\5.InfraStructure\ASPNETIdentityWithOnion.Web\bin\Sample.InfraStructure.dll
+D:\Temps\Sample-MVC-Angular-Webapi-Mongo\5.InfraStructure\ASPNETIdentityWithOnion.Web\bin\Sample.InfraStructure.pdb
+D:\Temps\Sample-MVC-Angular-Webapi-Mongo\5.InfraStructure\Sample.Infrastructure\obj\Debug\Sample.InfraStructure.csprojResolveAssemblyReference.cache
+D:\Temps\Sample-MVC-Angular-Webapi-Mongo\5.InfraStructure\Sample.Infrastructure\obj\Debug\Sample.InfraStructure.dll
+D:\Temps\Sample-MVC-Angular-Webapi-Mongo\5.InfraStructure\Sample.Infrastructure\obj\Debug\Sample.InfraStructure.pdb

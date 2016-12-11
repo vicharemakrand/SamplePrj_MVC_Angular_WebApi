@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "Search Profile";
+}
+
+@section scripts {
+
+}
+
+<div class="container" ng-app="SearchProfileModule">
+
+ @Html.Partial("_TopMenu")
+
+   <div class="page-header">Mak Sample site - search</div>
+    <div class="row">
+        <div>
+            <div anti-Forgery-Token ng-view>  </div>
+        </div>
+    </div>
+</div>
+
+@Scripts.Render("~/bundles/searchprofile-modules")
+@Scripts.Render("~/bundles/searchprofile-services")
+@Scripts.Render("~/bundles/searchprofile-viewmodels")
+@Scripts.Render("~/bundles/searchprofile-controllers")

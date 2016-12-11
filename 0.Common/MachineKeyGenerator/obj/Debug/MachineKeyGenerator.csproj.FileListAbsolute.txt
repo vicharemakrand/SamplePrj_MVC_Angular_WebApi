@@ -1,0 +1,5 @@
+D:\Temps\Sample-MVC-Angular-Webapi-Mongo\0.Common\MachineKeyGenerator\bin\Debug\MachineKeyGenerator.exe.config
+D:\Temps\Sample-MVC-Angular-Webapi-Mongo\0.Common\MachineKeyGenerator\bin\Debug\MachineKeyGenerator.exe
+D:\Temps\Sample-MVC-Angular-Webapi-Mongo\0.Common\MachineKeyGenerator\bin\Debug\MachineKeyGenerator.pdb
+D:\Temps\Sample-MVC-Angular-Webapi-Mongo\0.Common\MachineKeyGenerator\obj\Debug\MachineKeyGenerator.exe
+D:\Temps\Sample-MVC-Angular-Webapi-Mongo\0.Common\MachineKeyGenerator\obj\Debug\MachineKeyGenerator.pdb

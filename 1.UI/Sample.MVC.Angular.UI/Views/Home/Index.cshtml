@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Home";
+}
+
+@section scripts {
+
+}
+
+<div class="container" ng-app="HomeModule">
+ @Html.Partial("_TopMenu")
+
+       <div class="page-header">Mak Sample site - home</div>
+    <div class="row">
+        <div class="col-md-10 col-md-offset-2">
+            <div anti-Forgery-Token ng-view>  </div>
+        </div>
+    </div>
+</div>
+

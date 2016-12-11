@@ -1,0 +1,9 @@
+﻿<div class="jumbotron">
+    <ul class="list-group">
+        {{homeCtrl.message}}
+        <li ng-show="homeCtrl.profiles" class="list-group-item" ng-repeat="p in homeCtrl.profiles">
+            {{p.email}}
+        </li>
+    </ul>
+    <button class="btn btn-block" ng-click="homeCtrl.GetProfiles()">check api works</button>
+</div>

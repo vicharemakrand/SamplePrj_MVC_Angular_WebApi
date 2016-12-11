@@ -1,0 +1,8 @@
+﻿    <ul class="nav navbar-nav navbar-right">
+        <li ng-hide="!login.authenticationVM.IsAuth"><a href="#">Welcome {{login.authenticationVM.UserName}}</a></li>
+        <li ng-hide="!login.authenticationVM.IsAuth"><a href="/searchprofile">Profiles</a></li>
+        <li ng-hide="!login.authenticationVM.IsAuth"><a href="" ng-click="login.LogOut()">Logout</a></li>
+        <li ng-hide="login.authenticationVM.IsAuth"> <a href="#/login">Login</a></li>
+        <li ng-hide="login.authenticationVM.IsAuth"> <a href="#/signup">Sign Up</a></li>
+
+    </ul>

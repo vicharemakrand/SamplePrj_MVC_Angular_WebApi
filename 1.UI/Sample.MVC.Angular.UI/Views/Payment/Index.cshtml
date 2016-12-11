@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Payment";
+}
+
+@section scripts {
+
+}
+
+<div class="container" ng-app="UserProfileModule">
+    @Html.Partial("_TopMenu")
+
+    <div class="page-header">Mak Sample site - payment</div>
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+            <div anti-Forgery-Token ng-view>  </div>
+        </div>
+    </div>
+</div>
+

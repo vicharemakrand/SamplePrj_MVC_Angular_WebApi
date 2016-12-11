@@ -1,0 +1,65 @@
+﻿<form class="form-login" name="formSignUp" enctype="multipart/form-data" novalidate>
+    <h2 class="form-login-heading">Sign up</h2>
+    <div class="alert alert-danger" ng-if="formSignUp.$submitted && formSignUp.$invalid">Form Error!!</div>
+    <div class="alert alert-success" ng-if="!formSignUp.$invalid">Form Success!!</div>
+    <div class="form-group">
+        <label class="col-md-2 control-label">Email *</label>
+        <div class="col-md-10">
+            <input type="email" name="email" class="form-control" placeholder="Email" ng-model="signupCtrl.signUpVM.Email" ng-minlength="6"
+                ng-maxlength="100" ng-required="true" autofocus>
+            <div class="help-block" ng-messages="formSignUp.email.$error" ng-if="formSignUp.email.$touched">
+                <p ng-message="required">Your name is required.</p>
+                <p ng-message="minlength">Your name is too short.</p>
+                <p ng-message="maxlength">Your name is too long.</p>
+                <p ng-message="email">This needs to be a valid email</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-md-2 control-label">Password *</label>
+        <div class="col-md-10">
+            <input type="password" name="password" class="form-control" placeholder="Password" ng-model="signupCtrl.signUpVM.Password" ng-minlength="6"
+                   ng-maxlength="20" ng-required="true">
+            <div class="help-block" ng-messages="formSignUp.password.$error" ng-if="formSignUp.password.$touched">
+                <p ng-message="required">Your name is required.</p>
+                <p ng-message="minlength">Your name is too short.</p>
+                <p ng-message="maxlength">Your name is too long.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="form-group">
+        <label class="col-md-2 control-label">Gender *</label>
+        <div class="col-md-10">
+            <div ng-repeat="g in signupCtrl.signUpVM.Genders">
+                <input type="radio" name="gender" ng-attr-id="gender{{g.id}}" value="{{g.id}}"
+                       ng-checked="g.id == signupCtrl.signUpVM.Gender"> {{g.name}}
+            </div>
+            <div class="help-block" ng-messages="formSignUp.gender.$error" ng-if="formSignUp.gender.$touched">
+                <p ng-message="required">Gender is required.</p>
+            </div>
+        </div>
+   </div>
+
+    <div class="form-group">
+        <label class="col-md-2 control-label">Age *</label>
+        <div class="col-md-10">
+            <select name="ageRange" ng-model="signupCtrl.signUpVM.AgeRange" style="width:200px" ng-required="true"
+                    ng-options="a.id as a.name for a in signupCtrl.signUpVM.AgeRangeList"></select>
+            <div class="help-block" ng-messages="formSignUp.ageRange.$error" ng-if="formSignUp.ageRange.$touched">
+                <p ng-message="required">Age is required.</p>
+            </div>
+        </div>
+   </div>
+    <div class="form-group">
+        <div class="col-md-2"></div>
+        <div class="col-md-10">
+            <button class="btn btn-lg btn-info btn-block" style="width:200px" type="submit" ng-disabled="formSignUp.$invalid" ng-click="signupCtrl.SignUp()">Submit</button>
+        </div>
+    </div>
+        <div ng-hide="signupCtrl.ProcessInfo.Message == ''" ng-class="(signupCtrl.ProcessInfo.IsSucceed) ? 'alert alert-success' : 'alert alert-danger'">
+            {{signupCtrl.ProcessInfo.Message}}
+        </div>
+</form>

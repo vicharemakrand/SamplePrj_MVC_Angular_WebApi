@@ -1,0 +1,14 @@
+D:\Temps\Sample-MVC-Angular-Webapi-Mongo\4.MongoDbAccess\DatingSite.EntityModels\bin\Debug\Sample.EntityModels.dll.config
+D:\Temps\Sample-MVC-Angular-Webapi-Mongo\4.MongoDbAccess\DatingSite.EntityModels\bin\Debug\Sample.EntityModels.dll
+D:\Temps\Sample-MVC-Angular-Webapi-Mongo\4.MongoDbAccess\DatingSite.EntityModels\bin\Debug\Sample.EntityModels.pdb
+D:\Temps\Sample-MVC-Angular-Webapi-Mongo\4.MongoDbAccess\DatingSite.EntityModels\bin\Debug\MongoDB.Bson.dll
+D:\Temps\Sample-MVC-Angular-Webapi-Mongo\4.MongoDbAccess\DatingSite.EntityModels\bin\Debug\MongoDB.Bson.xml
+D:\Temps\Sample-MVC-Angular-Webapi-Mongo\4.MongoDbAccess\DatingSite.EntityModels\obj\Debug\Sample.EntityModels.dll
+D:\Temps\Sample-MVC-Angular-Webapi-Mongo\4.MongoDbAccess\DatingSite.EntityModels\obj\Debug\Sample.EntityModels.pdb
+D:\Temps\Sample-MVC-Angular-Webapi-Mongo\4.MongoDbAccess\Sample.EntityModels\bin\Debug\Sample.EntityModels.dll.config
+D:\Temps\Sample-MVC-Angular-Webapi-Mongo\4.MongoDbAccess\Sample.EntityModels\bin\Debug\Sample.EntityModels.dll
+D:\Temps\Sample-MVC-Angular-Webapi-Mongo\4.MongoDbAccess\Sample.EntityModels\bin\Debug\Sample.EntityModels.pdb
+D:\Temps\Sample-MVC-Angular-Webapi-Mongo\4.MongoDbAccess\Sample.EntityModels\bin\Debug\MongoDB.Bson.dll
+D:\Temps\Sample-MVC-Angular-Webapi-Mongo\4.MongoDbAccess\Sample.EntityModels\bin\Debug\MongoDB.Bson.xml
+D:\Temps\Sample-MVC-Angular-Webapi-Mongo\4.MongoDbAccess\Sample.EntityModels\obj\Debug\Sample.EntityModels.dll
+D:\Temps\Sample-MVC-Angular-Webapi-Mongo\4.MongoDbAccess\Sample.EntityModels\obj\Debug\Sample.EntityModels.pdb

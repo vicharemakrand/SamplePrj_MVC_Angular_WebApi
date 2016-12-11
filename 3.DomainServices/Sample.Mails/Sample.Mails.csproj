@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{07F7F261-C3A9-48A6-A0E4-3B2767B90EC0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sample.Mails</RootNamespace>
+    <AssemblyName>Sample.Mails</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.Unity">
+      <HintPath>..\..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="StructureMap, Version=4.3.0.449, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\StructureMap.4.4.0\lib\net45\StructureMap.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Mails\RootMail.cs" />
+    <Compile Include="Mails\UserPdfResultsMail.cs" />
+    <Compile Include="Mails\UserRegistrationMail.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\0.Common\Sample.Utility\Sample.Utility.csproj">
+      <Project>{637a5808-40c1-4890-8890-300c6fd24776}</Project>
+      <Name>Sample.Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\4.MongoDbAccess\Sample.EntityModels\Sample.EntityModels.csproj">
+      <Project>{79034b9a-1c93-4f0c-a167-9df5edabe35d}</Project>
+      <Name>Sample.EntityModels</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\5.InfraStructure\Sample.Infrastructure\Sample.InfraStructure.csproj">
+      <Project>{80756397-e0db-4a07-802a-aa3cccb948b4}</Project>
+      <Name>Sample.InfraStructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sample.ViewModels\Sample.ViewModels.csproj">
+      <Project>{46cc89f4-8842-48df-9991-fc5536890992}</Project>
+      <Name>Sample.ViewModels</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sample.IDomainServices\Sample.IDomainServices.csproj">
+      <Project>{1f73f87c-6d41-4c56-86bf-b108d0b4f26d}</Project>
+      <Name>Sample.IDomainServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sample.RequestResponseModels\Sample.RequestResponseModels.csproj">
+      <Project>{76c30866-99b1-4840-bde3-15fc52b500cb}</Project>
+      <Name>Sample.RequestResponseModels</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

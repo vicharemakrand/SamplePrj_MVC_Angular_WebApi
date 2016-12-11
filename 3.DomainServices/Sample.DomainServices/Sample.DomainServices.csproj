@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E11B27BC-A5F3-4B31-AC59-99F06085D22F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sample.DomainServices</RootNamespace>
+    <AssemblyName>Sample.DomainServices</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Bson">
+      <HintPath>..\..\packages\MongoDB.Bson.2.2.4\lib\net45\MongoDB.Bson.dll</HintPath>
+    </Reference>
+    <Reference Include="StructureMap, Version=4.3.0.449, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\StructureMap.4.4.0\lib\net45\StructureMap.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\BaseService.cs" />
+    <Compile Include="ModuleInit.cs" />
+    <Compile Include="IdentityStores\CustomRoleStore.cs" />
+    <Compile Include="IdentityStores\CustomUserStore.cs" />
+    <Compile Include="IdentityStores\ClientService.cs" />
+    <Compile Include="IdentityStores\RefreshTokenService.cs" />
+    <Compile Include="Mails\RootMail.cs" />
+    <Compile Include="Mails\UserPdfResultsMail.cs" />
+    <Compile Include="Mails\UserRegistrationMail.cs" />
+    <Compile Include="Services\PdfQueueService.cs" />
+    <Compile Include="Services\RequestQueueService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\EmailQueueService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\0.Common\Sample.Common.MEF\Sample.Common.MEF.csproj">
+      <Project>{9bcc6fec-6a6a-460b-9fa7-f398a4b43e39}</Project>
+      <Name>Sample.Common.MEF</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\0.Common\Sample.Utility\Sample.Utility.csproj">
+      <Project>{637a5808-40c1-4890-8890-300c6fd24776}</Project>
+      <Name>Sample.Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\4.MongoDbAccess\Sample.EntityModels\Sample.EntityModels.csproj">
+      <Project>{79034b9a-1c93-4f0c-a167-9df5edabe35d}</Project>
+      <Name>Sample.EntityModels</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\4.MongoDbAccess\Sample.IRepositories\Sample.IRepositories.csproj">
+      <Project>{f8d2c5e6-250f-475d-a3df-eab74434452a}</Project>
+      <Name>Sample.IRepositories</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\4.MongoDbAccess\Sample.Repositories\Sample.Repositories.csproj">
+      <Project>{495d3b28-8bb3-49e0-808b-ca7227cbe16c}</Project>
+      <Name>Sample.Repositories</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\5.InfraStructure\Sample.Infrastructure\Sample.InfraStructure.csproj">
+      <Project>{80756397-e0db-4a07-802a-aa3cccb948b4}</Project>
+      <Name>Sample.InfraStructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sample.ViewModels\Sample.ViewModels.csproj">
+      <Project>{46cc89f4-8842-48df-9991-fc5536890992}</Project>
+      <Name>Sample.ViewModels</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sample.IDomainServices\Sample.IDomainServices.csproj">
+      <Project>{1f73f87c-6d41-4c56-86bf-b108d0b4f26d}</Project>
+      <Name>Sample.IDomainServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sample.Mails\Sample.Mails.csproj">
+      <Project>{07f7f261-c3a9-48a6-a0e4-3b2767b90ec0}</Project>
+      <Name>Sample.Mails</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sample.RequestResponseModels\Sample.RequestResponseModels.csproj">
+      <Project>{76c30866-99b1-4840-bde3-15fc52b500cb}</Project>
+      <Name>Sample.RequestResponseModels</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy /Y "$(TargetDir)$(ProjectName).dll" "$(SolutionDir)2.ApplicationServices\Sample.WebApi4\bin\$(ProjectName).dll"
+</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
